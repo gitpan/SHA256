@@ -17,8 +17,7 @@
 
 #include <stdio.h>
 #include "sha512.h"
-
-#define BYTEORDER 1234
+#include "endian.h"
 
 /* truncate to 32 bits -- should be a null op on 32-bit machines */
 #define TRUNC32(x)	((Uint32)((x) & 0xffffffffLL))
